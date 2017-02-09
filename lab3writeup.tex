@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 \title{Chapter 3 Lab Writeup}
-\author{Zach Thompson et all}
+\author{Zach Thompson, Simon Hannes, Kyle Peterson}
 \begin{document}
 
 \maketitle{}
@@ -59,19 +59,30 @@ to be $22.17\Omega{}$.
 %END KYLE
 
 %start simon
-\section*{Study Questions}
+
+\section*{Conclusion}
 \paragraph{}
-1)
+In this lab we explored the difference between modeled and real circuits. Tolerance is the aspect of this difference applied to the component level. Tolerances scale by percentages of total value, so variance in output is scaled by the value of the component. While modeled circuits are useful tools in predicting real outcomes, we must take care to not take these models as absolutes, but rather as an approximate guide to circuit design and development. 
 
-2) Calculate Peak instantaneous and RMS power dissapated from a $220\Omega()$ resistor supplied by a 9V 1KhZ signal:
+\section*{Study Questions}
+2. Calculate Peak instantaneous and RMS power dissapated from a $220\Omega()$ resistor supplied by a 9V 1KhZ signal:
+\\
 $v(t) = 4.5cos(2000pi t) V = 4.50\angle{}0^\circ{} V$
-$i(t) = V(t)/Z = (4.5<0)/220 = 0.02\angle{}0^\circ{} A$
+\\
+$i(t) = V(t)/Z = (4.5\angle{}0^\circ{})/220 = 0.02\angle{}0^\circ{} A$
+\\
 $P(inst.) = (4.5)(0.02) = 92mVA$
+\\
 $P(real) = (1/2)(4.5)(0.02) = 46mW$
-
-3) A few examples of when it would be important to account for the non-ideal characteristics in your circuit design: 
-    -When you expect a current of voltage value to be zero i.e. across a bridge of two similar paths
-    -When your 
+\\
+\\
+3. A few examples of when it would be important to account for the non-ideal characteristics in your circuit design: 
+\\
+-When you expect a current of voltage value to be zero i.e. across a bridge of two similar paths
+\\
+-When using sensitive equipment it is important to not overload components
+\\
+-When your circuit is expected to perform over a variety of supplied voltage of current, it is important to understand how tolerances might scale
 
 
 %end simon
